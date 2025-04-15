@@ -34,14 +34,14 @@ export function renderOrderSummary(){
                   <div class="product-price">
                     $${formatCurrency(product.priceCents)}
                   </div>
-                  <div class="product-quantity">
+                  <div class="product-quantity js-product-quantity-${product.id}">
                     <span>
                       Quantity: <span class="quantity-label">${item.quantity}</span>
                     </span>
                     <span class="update-quantity-link link-primary">
                       Update
                     </span>
-                    <span class="delete-quantity-link link-primary" data-product-id="${product.id}">
+                    <span class="delete-quantity-link link-primary js-delete-link-${product.id}" data-product-id="${product.id}">
                       Delete
                     </span>
                   </div>
